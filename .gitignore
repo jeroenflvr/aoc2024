@@ -1,4 +1,4 @@
-/target
+target/
 input1.txt
 
 .zig-cache/
