@@ -50,12 +50,14 @@ fn find_xmas(grid: &[&[u8]], row: isize, col: isize) -> usize {
 
 fn find_mas(grid: &[&[u8]], row: isize, col: isize) -> usize {
     // need an M and S around the A, M or S in X shape
-    // left top to right bottom
 
+    // diag: left top to right bottom
     let mas1 = [
         get_char_at_pos(grid, row - 1, col - 1),
         get_char_at_pos(grid, row + 1, col + 1),
     ];
+
+    // diag: right top to left bottom
     let mas2 = [
         get_char_at_pos(grid, row - 1, col + 1),
         get_char_at_pos(grid, row + 1, col - 1),
