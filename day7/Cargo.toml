@@ -5,3 +5,10 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.94"
+divan = "0.1.17"
+rayon = "1.10.0"
+itertools = "0.13.0"
+
+[[bench]]
+name = "bench"
+harness = false
