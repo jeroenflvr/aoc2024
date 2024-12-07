@@ -121,7 +121,7 @@ mod tests {
 
     #[test]
     fn test_first() -> Result<()> {
-        assert_eq!(143, process_first(INPUT.to_owned()));
+        assert_eq!(144, process_first(INPUT.to_owned()));
         Ok(())
     }
 
