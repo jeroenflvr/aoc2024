@@ -87,7 +87,7 @@ pub fn process_second_cb(input: String) -> u64 {
                                           // let mut good_results = vec![];
     let mut test_lines = vec![];
 
-    for line in input.split("\n") {
+    for line in input.lines() {
         test_lines.push(
             line.split_once(":")
                 .map(|(x, term)| {
@@ -137,7 +137,7 @@ pub fn process_second_cb_rayon(input: String) -> u64 {
     // let mut good_results = vec![];
     let mut test_lines = vec![];
 
-    for line in input.split("\n") {
+    for line in input.lines() {
         test_lines.push(
             line.split_once(":")
                 .map(|(x, term)| {
